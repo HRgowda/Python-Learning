@@ -1,0 +1,13 @@
+-> l1 = l2 (Shallow copy)
+   l2= l1.copy() (Deep copy)
+
+-> In insert() method when we give a index more than the total index in a list it allows to store the element at the last.
+  Ex : l1=[1,2,3,4]
+       l1.insert(10, 10)
+
+-> When there is a mismatch in the number of arguments given in a method of list it shows "TypeError : insert expected 2 arguments".
+
+-> If pop() method has a argument it will pop out the element of the argument given.
+
+-> ascending order of a number = ''.join(sorted(number))
+   descending order of a number = ''.join(sorted(number, reverse = True))
