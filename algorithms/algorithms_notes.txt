@@ -1,0 +1,50 @@
+                             SELECTION SORT.
+. Here we sort the elements of the unsorted array by taking the min_index of the given array to i i.e for loop from 0 to len(arr).
+. Now i have a element of min_index = 0 and the remaining elements in the array, now read all the elements of the array after the min_index and compare the elements of the array with the min_index element.
+. In the comaprision if the array element is less than the min_index element swap it, else repeat the inner for loop .
+
+      Alogrithm.
+   -> I have an arr of elements (I/P).
+      .Read all the elements from 0 to len(arr). 
+      .Set the min_index = i (i.e 0).
+      .Now read the elements after the min_index i.e form i+1 to len(arr).
+      .Compare the min_index element with the i+1th element.
+      .If arr[i+1] < arr[min_index] then swap these elements.
+      Swapping :
+               temp = arr[j]
+               arr[j] = arr[min_index]
+               arr[min_index] = temp 
+                     OR
+               arr[j], arr[min_index] = arr[min_index], arr[j]
+               .Here the right arr[min_index] is assigned to left arr[j]and right arr[j] is assigned to left arr[min_index].                             
+---------------------------------------------------------                                
+                             INSERTION SORT:
+. Here we reduce the complexity and then conqure.
+. In this sorting method we will take an sorted array inside the unsorted array then compare the elements of the unsorted array with the boundary element of the sorted array. 
+. That is we will create the spaces i.e shifting the boundary element to the next index so that the element lesser than that will be placed before it.
+
+   Alogrithm :
+
+   ->Lets take an unsorted array arr = [22, 11, 7, 17, 29, 3, 23, 19] .
+   .Lets assume that the element 22 is sorted array in the unsorted array.
+   .So [22] is an sorted array and remaining elements is unsorted array where both these arrays are inside the same array(arr) itself.
+
+   ->Using 'for' loop lets read the values of unsorted array.
+   .So the for loop must start iterating from 1 to len(arr).
+   .The for loop will read the 1st element of unsorted array, now not only reading the elements i want to access it so i will store the 1st element in a variable.
+   .Here sorted array is another array so let its index be represented as 'j', and j will be j = i-1 .
+   .Now there will have a inner 'while' loop where the condition would be j >= 0 and element < arr[j] if the condition 'holds' then the boundary element would be shifted to the next index i.e arr[j+1].
+   .Now we should decreement the value of j because when the next while loop 'fails' then the 1st element would be inserted in the 1st index of sorted so to access the 1st index i.e 0 from the index 1 we should go backwards that is decreementing the vlaue of j .
+   .When the condition of 'while' loop fails then the element will be placed before the boundary element , if the element form unsorted array is greater than the boundary element of the sorted array then there will be no shifts and the element will be placed after the boundary element making this element a new boundary element of the sortoted array.
+  
+-------------------------------------------
+
+                              STACK.
+.A Data Structure that works on LIFO strategy.
+   Applications:
+   .Re-Do and Un-Do in the text editor.
+   .Infix expressions to Postfix expressions and solving a postfix expression.
+   .DFS algorithm(Dept First Search) uses stack.
+   .Call Stack (How functions are executed implicitly)
+
+Special 
